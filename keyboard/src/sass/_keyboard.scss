@@ -1,73 +1,85 @@
 .keyboard {
-    margin: 0 auto;
-    margin-top: 35px;
-    border: 5px solid black;
-    padding: 10px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    .line {
-        display: flex;
-        margin-bottom: 6px;
-    }
-    .line:last-child {
-        margin-bottom: 0px;
-    }
-    .key {
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 2px solid #6446ce;
-        border-radius: 7px;
-        margin-right: 6px;
-        float: left;
-        cursor: pointer;
-        font-size: 16px;
-        line-height: 100%;
-        color: black;
-        background-color: white;
-        transition: all 0.5s;
-    }
-    .key:last-child {
-        margin-right: 0;
-    }
+	margin: 0 auto;
+	margin-top: 35px;
+	border: 5px solid black;
+	padding: 10px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	width: 714px;
 
-    .key:hover {
-        background-color: #6446ce;
-        color: white;
-    }
+	.line {
+		display: flex;
+		margin-bottom: 6px;
+	}
 
-    .backspace {
-        width: 86px;
-    }
-    .tab, .slash {
-        width: 62px;
-    }
-    .capslock {
-        width: 75px;
-    }
-    .enter {
-        width: 95px;
-    }
-    .shift {
-        width: 85px;
-        // position: relative;
-    }
+	.line:last-child {
+		margin-bottom: 0px;
+	}
 
-    // .shift::before {
-    //     content: '';
-    //     position: absolute;
-    //     width: 5px;
-    //     height: 5px;
-    //     display: block;
-    //     background-color: yellow;
-    //     border-radius: 100%;
-    //     border: 1px solid black;
-    // }
+	.key {
+		width: 40px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 2px solid #6446ce;
+		border-radius: 7px;
+		margin-right: 6px;
+		float: left;
+		cursor: pointer;
+		font-size: 16px;
+		line-height: 100%;
+		color: black;
+		background-color: white;
+		transition: all 0.5s;
+		user-select: none;
+	}
 
-    .space {
-        width: 268px;
-    }
+	.key:last-child {
+		margin-right: 0;
+	}
+
+	.key:hover {
+		background-color: #6446ce;
+		color: white;
+	}
+
+	.key.active {
+		background-color: #6446ce;
+		color: white;
+	}
+
+	.backspace {
+		width: 86px;
+	}
+
+	.tab,
+	.slash {
+		width: 63px;
+	}
+
+	.capslock {
+		width: 77px;
+	}
+
+	.enter {
+		width: 95px;
+	}
+
+	.shift {
+		width: 86px;
+	}
+
+	.space {
+		width: 295px;
+	}
+
+	.del {
+		width: 61px;
+	}
+
+	.hidden {
+		display: none;
+	}
 }

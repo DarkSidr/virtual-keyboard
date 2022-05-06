@@ -1,122 +1,81 @@
-const oneLine = [192, 49, 50, 51, 52, 53, 54, 55, 56, 57, 48, 189, 187, 8];
-const twoLine = [9, 81, 87, 69, 82, 84, 89, 85, 73, 79, 80, 219, 221, 220];
-const threeLine = [20, 65, 83, 68, 70, 71, 72, 74, 75, 76, 186, 222, 13];
-const fourLine = [16, 90, 88, 67, 86, 66, 78, 77, 188, 190, 191, 38, 16];
-const fiveLine = [17, 91, 18, 32, 18, 93, 37, 40, 39, 17];
+import keyObj from '../keys';
+
+const lang = localStorage.getItem('lang');
 
 function createKey() {
-  // document.onkeydown = function (event) {
-  // console.log(event);
-  // fiveLine.push(event.keyCode);
-  // console.log(fiveLine);
-  // };
   const keyboard = document.querySelector('.keyboard');
+  let line = '';
+  let oneKey = '';
+  let langRu = '';
+  let langEn = '';
+  let shiftRu = '';
+  let lowerCaseRu = '';
+  let upperCaseRu = '';
+  let shiftEng = '';
+  let lowerCaseEng = '';
+  let upperCaseEng = '';
 
-  function contentKey(arr) {
-    const line = document.createElement('div');
+  for (let i = 0; i < keyObj.length; i++) {
+    line = document.createElement('div');
     line.classList.add('line');
     keyboard.append(line);
-    arr.forEach((element) => {
-      const oneKey = document.createElement('div');
+    for (let j = 0; j < keyObj[i].length; j++) {
+      oneKey = document.createElement('div');
       oneKey.classList.add('key');
-      switch (element) {
-        case 192:
-          oneKey.innerText += '`';
-          break;
-        case 189:
-          oneKey.innerText += '-';
-          break;
-        case 187:
-          oneKey.innerText += '=';
-          break;
-        case 8:
-          oneKey.classList.add('backspace');
-          oneKey.innerText += 'Backspace';
-          break;
-        case 9:
-          oneKey.classList.add('tab');
-          oneKey.innerText += 'Tab';
-          break;
-        case 219:
-          oneKey.innerText += '[';
-          break;
-        case 221:
-          oneKey.innerText += ']';
-          break;
-        case 220:
-          oneKey.classList.add('slash');
-          oneKey.innerText += '\\';
-          break;
-        case 20:
-          oneKey.classList.add('capslock');
-          oneKey.innerText += 'Capslock';
-          break;
-        case 186:
-          oneKey.innerText += ';';
-          break;
-        case 222:
-          oneKey.innerText += "'";
-          break;
-        case 13:
-          oneKey.classList.add('enter');
-          oneKey.innerText += 'Enter';
-          break;
-        case 16:
-          oneKey.classList.add('shift');
-          oneKey.innerText += 'shift';
-          break;
-        case 188:
-          oneKey.innerText += ',';
-          break;
-        case 190:
-          oneKey.innerText += '.';
-          break;
-        case 191:
-          oneKey.innerText += '/';
-          break;
-        case 17:
-          oneKey.classList.add('ctrl');
-          oneKey.innerText += 'ctrl';
-          break;
-        case 91:
-          oneKey.classList.add('win');
-          oneKey.innerText += 'win';
-          break;
-        case 18:
-          oneKey.classList.add('alt');
-          oneKey.innerText += 'alt';
-          break;
-        case 32:
-          oneKey.classList.add('space');
-          oneKey.innerText += 'space';
-          break;
-        case 93:
-          oneKey.classList.add('cont');
-          oneKey.innerText += 'cont';
-          break;
-        case 37:
-          oneKey.innerText += '◄';
-          break;
-        case 40:
-          oneKey.innerText += '▼';
-          break;
-        case 39:
-          oneKey.innerText += '►';
-          break;
-        case 38:
-          oneKey.innerText += '▲';
-          break;
-        default:
-          oneKey.innerText += String.fromCharCode(element).toLowerCase();
+      langRu = document.createElement('div');
+      langEn = document.createElement('div');
+      shiftRu = document.createElement('span');
+      lowerCaseRu = document.createElement('span');
+      upperCaseRu = document.createElement('span');
+      shiftEng = document.createElement('span');
+      lowerCaseEng = document.createElement('span');
+      upperCaseEng = document.createElement('span');
+      langRu.classList.add('ru');
+      langEn.classList.add('eng');
+      oneKey.dataset.keyid = keyObj[i][j].code;
+      if (lang === 'en') {
+        langRu.classList.add('hidden');
+        upperCaseEng.classList.add('hidden');
+        shiftEng.classList.add('hidden');
+        if (keyObj[i][j].class) {
+          oneKey.classList.add(keyObj[i][j].class);
+          lowerCaseEng.innerText = keyObj[i][j].key;
+          shiftEng.innerText = keyObj[i][j].shift;
+          upperCaseEng.innerText = keyObj[i][j].key;
+        } else {
+          lowerCaseEng.innerText = keyObj[i][j].key.en;
+          shiftEng.innerText = keyObj[i][j].shift.en;
+          upperCaseEng.innerText = keyObj[i][j].shift.en;
+        }
       }
-      line.append(oneKey);
-    });
-  }
-  contentKey(oneLine);
-  contentKey(twoLine);
-  contentKey(threeLine);
-  contentKey(fourLine);
-  contentKey(fiveLine);
-}
+      if (lang === 'ru') {
+        langEn.classList.add('hidden');
+        upperCaseRu.classList.add('hidden');
+        shiftRu.classList.add('hidden');
+        if (keyObj[i][j].class) {
+          oneKey.classList.add(keyObj[i][j].class);
+          lowerCaseRu.innerText = keyObj[i][j].key;
+          shiftRu.innerText = keyObj[i][j].shift;
+          upperCaseRu.innerText = keyObj[i][j].key;
+        } else {
+          lowerCaseRu.innerText = keyObj[i][j].key.ru;
+          shiftRu.innerText = keyObj[i][j].shift.ru;
+          upperCaseRu.innerText = keyObj[i][j].shift.ru;
+        }
+      }
+      shiftRu.classList.add('shifton');
+      lowerCaseRu.classList.add('low');
+      upperCaseRu.classList.add('upp');
+      shiftEng.classList.add('shifton');
+      lowerCaseEng.classList.add('low');
+      upperCaseEng.classList.add('upp');
+      langEn.append(shiftEng, lowerCaseEng, upperCaseEng);
+      langRu.append(shiftRu, lowerCaseRu, upperCaseRu);
 
+      oneKey.append(langRu, langEn);
+
+      line.append(oneKey);
+    }
+  }
+}
 export default createKey;

@@ -2,6 +2,764 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/keys.js":
+/*!************************!*\
+  !*** ./src/js/keys.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const keyObj = [
+  [
+    {
+      key: {
+        ru: 'ё',
+        en: '`',
+      },
+      code: 'Backquote',
+      shift: {
+        ru: 'Ё',
+        en: '~',
+      },
+    },
+    {
+      key: {
+        ru: '1',
+        en: '1',
+      },
+      code: 'Digit1',
+      shift: {
+        ru: '!',
+        en: '!',
+      },
+    },
+    {
+      key: {
+        ru: '2',
+        en: '2',
+      },
+      code: 'Digit2',
+      shift: {
+        ru: '"',
+        en: '@',
+      },
+    },
+    {
+      key: {
+        ru: '3',
+        en: '3',
+      },
+      code: 'Digit3',
+      shift: {
+        ru: '№',
+        en: '#',
+      },
+    },
+    {
+      key: {
+        ru: '4',
+        en: '4',
+      },
+      code: 'Digit4',
+      shift: {
+        ru: ';',
+        en: '$',
+      },
+    },
+    {
+      key: {
+        ru: '5',
+        en: '5',
+      },
+      code: 'Digit5',
+      shift: {
+        ru: '%',
+        en: '%',
+      },
+    },
+    {
+      key: {
+        ru: '6',
+        en: '6',
+      },
+      code: 'Digit6',
+      shift: {
+        ru: ':',
+        en: '^',
+      },
+    },
+    {
+      key: {
+        ru: '7',
+        en: '7',
+      },
+      code: 'Digit7',
+      shift: {
+        ru: '?',
+        en: '&',
+      },
+    },
+    {
+      key: {
+        ru: '8',
+        en: '8',
+      },
+      code: 'Digit8',
+      shift: {
+        ru: '*',
+        en: '*',
+      },
+    },
+    {
+      key: {
+        ru: '9',
+        en: '9',
+      },
+      code: 'Digit9',
+      shift: {
+        ru: '(',
+        en: '(',
+      },
+    },
+    {
+      key: {
+        ru: '0',
+        en: '0',
+      },
+      code: 'Digit0',
+      shift: {
+        ru: ')',
+        en: ')',
+      },
+    },
+    {
+      key: {
+        ru: '-',
+        en: '-',
+      },
+      code: 'Minus',
+      shift: {
+        ru: '_',
+        en: '_',
+      },
+    },
+    {
+      key: {
+        ru: '=',
+        en: '=',
+      },
+      code: 'Equal',
+      shift: {
+        ru: '+',
+        en: '+',
+      },
+    },
+    {
+      key: 'Backspace',
+      code: 'Backspace',
+      shift: 'Backspace',
+      class: 'backspace',
+    },
+  ],
+  [
+    {
+      key: 'Tab',
+      code: 'Tab',
+      shift: 'Tab',
+      class: 'tab',
+    },
+    {
+      key: {
+        ru: 'й',
+        en: 'q',
+      },
+      code: 'KeyQ',
+      shift: {
+        ru: 'Й',
+        en: 'Q',
+      },
+    },
+    {
+      key: {
+        ru: 'ц',
+        en: 'w',
+      },
+      code: 'KeyW',
+      shift: {
+        ru: 'Ц',
+        en: 'W',
+      },
+    },
+    {
+      key: {
+        ru: 'у',
+        en: 'e',
+      },
+      code: 'KeyE',
+      shift: {
+        ru: 'У',
+        en: 'E',
+      },
+    },
+    {
+      key: {
+        ru: 'к',
+        en: 'r',
+      },
+      code: 'KeyR',
+      shift: {
+        ru: 'К',
+        en: 'R',
+      },
+    },
+    {
+      key: {
+        ru: 'е',
+        en: 't',
+      },
+      code: 'KeyT',
+      shift: {
+        ru: 'Е',
+        en: 'T',
+      },
+    },
+    {
+      key: {
+        ru: 'н',
+        en: 'y',
+      },
+      code: 'KeyY',
+      shift: {
+        ru: 'Н',
+        en: 'Y',
+      },
+    },
+    {
+      key: {
+        ru: 'г',
+        en: 'u',
+      },
+      code: 'KeyU',
+      shift: {
+        ru: 'Г',
+        en: 'U',
+      },
+    },
+    {
+      key: {
+        ru: 'ш',
+        en: 'i',
+      },
+      code: 'KeyI',
+      shift: {
+        ru: 'Ш',
+        en: 'I',
+      },
+    },
+    {
+      key: {
+        ru: 'щ',
+        en: 'o',
+      },
+      code: 'KeyO',
+      shift: {
+        ru: 'Щ',
+        en: 'O',
+      },
+    },
+    {
+      key: {
+        ru: 'з',
+        en: 'p',
+      },
+      code: 'KeyP',
+      shift: {
+        ru: 'З',
+        en: 'P',
+      },
+    },
+    {
+      key: {
+        ru: 'х',
+        en: '[',
+      },
+      code: 'BracketLeft',
+      shift: {
+        ru: 'Х',
+        en: '{',
+      },
+    },
+    {
+      key: {
+        ru: 'ъ',
+        en: ']',
+      },
+      code: 'BracketRight',
+      shift: {
+        ru: 'Ъ',
+        en: '}',
+      },
+    },
+    {
+      key: '\\',
+      code: 'Backslash',
+      shift: '/',
+      class: 'slash',
+    },
+  ],
+  [
+    {
+      key: 'CapsLock',
+      code: 'CapsLock',
+      shift: 'CapsLock',
+      class: 'capslock',
+    },
+    {
+      key: {
+        ru: 'ф',
+        en: 'a',
+      },
+      code: 'KeyA',
+      shift: {
+        ru: 'Ф',
+        en: 'A',
+      },
+    },
+    {
+      key: {
+        ru: 'ы',
+        en: 's',
+      },
+      code: 'KeyS',
+      shift: {
+        ru: 'Ы',
+        en: 'S',
+      },
+    },
+    {
+      key: {
+        ru: 'в',
+        en: 'd',
+      },
+      code: 'KeyD',
+      shift: {
+        ru: 'В',
+        en: 'D',
+      },
+    },
+    {
+      key: {
+        ru: 'а',
+        en: 'f',
+      },
+      code: 'KeyF',
+      shift: {
+        ru: 'А',
+        en: 'F',
+      },
+    },
+    {
+      key: {
+        ru: 'п',
+        en: 'g',
+      },
+      code: 'KeyG',
+      shift: {
+        ru: 'П',
+        en: 'G',
+      },
+    },
+    {
+      key: {
+        ru: 'р',
+        en: 'h',
+      },
+      code: 'KeyH',
+      shift: {
+        ru: 'Р',
+        en: 'H',
+      },
+    },
+    {
+      key: {
+        ru: 'о',
+        en: 'j',
+      },
+      code: 'KeyJ',
+      shift: {
+        ru: 'О',
+        en: 'J',
+      },
+    },
+    {
+      key: {
+        ru: 'л',
+        en: 'k',
+      },
+      code: 'KeyK',
+      shift: {
+        ru: 'Л',
+        en: 'K',
+      },
+    },
+    {
+      key: {
+        ru: 'д',
+        en: 'l',
+      },
+      code: 'KeyL',
+      shift: {
+        ru: 'д',
+        en: 'L',
+      },
+    },
+    {
+      key: {
+        ru: 'ж',
+        en: ';',
+      },
+      code: 'Semicolon',
+      shift: {
+        ru: 'Ж',
+        en: ':',
+      },
+    },
+    {
+      key: {
+        ru: 'э',
+        en: "'",
+      },
+      code: 'Quote',
+      shift: {
+        ru: 'Э',
+        en: '"',
+      },
+    },
+    {
+      key: 'Enter',
+      code: 'Enter',
+      shift: 'Enter',
+      class: 'enter',
+    },
+  ],
+  [
+    {
+      key: 'Shift',
+      code: 'ShiftLeft',
+      shift: 'Shift',
+      class: 'shift',
+    },
+    {
+      key: {
+        ru: 'я',
+        en: 'z',
+      },
+      code: 'KeyZ',
+      shift: {
+        ru: 'Я',
+        en: 'Z',
+      },
+    },
+    {
+      key: {
+        ru: 'ч',
+        en: 'x',
+      },
+      code: 'KeyX',
+      shift: {
+        ru: 'Ч',
+        en: 'X',
+      },
+    },
+    {
+      key: {
+        ru: 'с',
+        en: 'c',
+      },
+      code: 'KeyC',
+      shift: {
+        ru: 'С',
+        en: 'C',
+      },
+    },
+    {
+      key: {
+        ru: 'м',
+        en: 'v',
+      },
+      code: 'KeyV',
+      shift: {
+        ru: 'М',
+        en: 'V',
+      },
+    },
+    {
+      key: {
+        ru: 'и',
+        en: 'b',
+      },
+      code: 'KeyB',
+      shift: {
+        ru: 'И',
+        en: 'B',
+      },
+    },
+    {
+      key: {
+        ru: 'т',
+        en: 'n',
+      },
+      code: 'KeyN',
+      shift: {
+        ru: 'т',
+        en: 'N',
+      },
+    },
+    {
+      key: {
+        ru: 'ь',
+        en: 'm',
+      },
+      code: 'KeyM',
+      shift: {
+        ru: 'Ь',
+        en: 'M',
+      },
+    },
+    {
+      key: {
+        ru: 'б',
+        en: ',',
+      },
+      code: 'Comma',
+      shift: {
+        ru: 'Б',
+        en: '<',
+      },
+    },
+    {
+      key: {
+        ru: 'ю',
+        en: '.',
+      },
+      code: 'Period',
+      shift: {
+        ru: 'Ю',
+        en: '>',
+      },
+    },
+    {
+      key: {
+        ru: '.',
+        en: '/',
+      },
+      code: 'Slash',
+      shift: {
+        ru: ',',
+        en: '?',
+      },
+    },
+    {
+      key: '▲',
+      code: 'ArrowUp',
+      shift: '▲',
+      class: 'arrowup',
+    },
+    {
+      key: 'Shift',
+      code: 'ShiftRight',
+      shift: 'Shift',
+      class: 'shift',
+    },
+  ],
+  [
+    {
+      key: 'Ctrl',
+      code: 'ControlLeft',
+      shift: 'Ctrl',
+      class: 'ctrl',
+    },
+    {
+      key: 'Alt',
+      code: 'AltLeft',
+      shift: 'Alt',
+      class: 'alt',
+    },
+    {
+      key: 'Space',
+      code: 'Space',
+      shift: 'Space',
+      class: 'space',
+    },
+    {
+      key: 'Alt',
+      code: 'AltRight',
+      shift: 'Alt',
+      class: 'alt',
+    },
+    {
+      key: 'Del',
+      code: 'Delete',
+      shift: 'Del',
+      class: 'del',
+    },
+    {
+      key: '◄',
+      code: 'ArrowLeft',
+      shift: '◄',
+      class: 'arrowleft',
+    },
+    {
+      key: '▼',
+      code: 'ArrowDown',
+      shift: '▼',
+      class: 'arrowdown',
+    },
+    {
+      key: '►',
+      code: 'ArrowRight',
+      shift: '►',
+      class: 'arrowright',
+    },
+    {
+      key: 'Ctrl',
+      code: 'ControlRight',
+      shift: 'Ctrl',
+      class: 'ctrl',
+    },
+  ],
+];
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (keyObj);
+
+
+/***/ }),
+
+/***/ "./src/js/modules/activeKey.js":
+/*!*************************************!*\
+  !*** ./src/js/modules/activeKey.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function activeKey() {
+  const lang = localStorage.getItem('lang');
+  const low = document.querySelectorAll('.low');
+  const shifton = document.querySelectorAll('.shifton');
+  const keyboard = document.querySelector('.keyboard');
+  const key = document.querySelectorAll('.key');
+  document.onkeydown = function (event) {
+    const target = event.code;
+    if (target === 'ShiftLeft' || target === 'ShiftRight') {
+      if (lang === 'en') {
+        low.forEach((element) => {
+          element.classList.add('hidden');
+        });
+        shifton.forEach((element) => {
+          element.classList.remove('hidden');
+        });
+      }
+
+      if (lang === 'ru') {
+        low.forEach((element) => {
+          element.classList.add('hidden');
+        });
+        shifton.forEach((element) => {
+          element.classList.remove('hidden');
+        });
+      }
+    }
+    if (document.querySelector(`.keyboard .key[data-keyid="${target}"]`)) {
+      document.querySelector(`.keyboard .key[data-keyid="${target}"]`).classList.add('active');
+    }
+  };
+
+  document.onkeyup = function (event) {
+    const target = event.code;
+    if (target === 'ShiftLeft' || target === 'ShiftRight') {
+      if (lang === 'en') {
+        low.forEach((element) => {
+          element.classList.remove('hidden');
+        });
+        shifton.forEach((element) => {
+          element.classList.add('hidden');
+        });
+      }
+
+      if (lang === 'ru') {
+        low.forEach((element) => {
+          element.classList.remove('hidden');
+        });
+        shifton.forEach((element) => {
+          element.classList.add('hidden');
+        });
+      }
+    }
+    if (document.querySelector(`.keyboard .key[data-keyid="${target}"]`)) {
+      document.querySelector(`.keyboard .key[data-keyid="${target}"]`).classList.remove('active');
+    }
+  };
+  keyboard.addEventListener('click', (e) => {
+    const event = e.target.closest('.key');
+    if (event.classList.contains('shift') && event.dataset.keyid === 'ShiftLeft') {
+      key.forEach((element) => {
+        if (element.classList.contains('shift') && element.dataset.keyid === 'ShiftLeft') {
+          element.classList.add('active');
+          if (lang === 'en') {
+            low.forEach((item) => {
+              item.classList.add('hidden');
+            });
+            shifton.forEach((item) => {
+              item.classList.remove('hidden');
+            });
+          }
+          if (lang === 'ru') {
+            low.forEach((item) => {
+              item.classList.add('hidden');
+            });
+            shifton.forEach((item) => {
+              item.classList.remove('hidden');
+            });
+          }
+        }
+      });
+    }
+    if (event.classList.contains('shift') && event.dataset.keyid === 'ShiftRight') {
+      key.forEach((element) => {
+        if (element.classList.contains('shift') && element.dataset.keyid === 'ShiftRight') {
+          element.classList.add('active');
+          if (lang === 'en') {
+            low.forEach((item) => {
+              item.classList.add('hidden');
+            });
+            shifton.forEach((item) => {
+              item.classList.remove('hidden');
+            });
+          }
+          if (lang === 'ru') {
+            low.forEach((item) => {
+              item.classList.add('hidden');
+            });
+            shifton.forEach((item) => {
+              item.classList.remove('hidden');
+            });
+          }
+        }
+      });
+    }
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (activeKey);
+
+
+/***/ }),
+
 /***/ "./src/js/modules/contentText.js":
 /*!***************************************!*\
   !*** ./src/js/modules/contentText.js ***!
@@ -28,10 +786,10 @@ function contentText() {
   const textHello = new Content('.title', 'DarkSidr Virtual Keyboard');
   textHello.createContent();
 
-  const textWindow = new Content('.window-text', 'DarkSidr Virtual Keyboard');
+  const textWindow = new Content('.window-text', 'Клавиатура создана в операционной системе Windows');
   textWindow.createContent();
 
-  const textLang = new Content('.lang-text', 'DarkSidr Virtual Keyboard DarkSidr Virtual Keyboard');
+  const textLang = new Content('.lang-text', 'Для переключения языка комбинация: левыe ctrl + alt');
   textLang.createContent();
 }
 
@@ -105,127 +863,87 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-const oneLine = [192, 49, 50, 51, 52, 53, 54, 55, 56, 57, 48, 189, 187, 8];
-const twoLine = [9, 81, 87, 69, 82, 84, 89, 85, 73, 79, 80, 219, 221, 220];
-const threeLine = [20, 65, 83, 68, 70, 71, 72, 74, 75, 76, 186, 222, 13];
-const fourLine = [16, 90, 88, 67, 86, 66, 78, 77, 188, 190, 191, 38, 16];
-const fiveLine = [17, 91, 18, 32, 18, 93, 37, 40, 39, 17];
+/* harmony import */ var _keys__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../keys */ "./src/js/keys.js");
+
+
+const lang = localStorage.getItem('lang');
 
 function createKey() {
-  // document.onkeydown = function (event) {
-  // console.log(event);
-  // fiveLine.push(event.keyCode);
-  // console.log(fiveLine);
-  // };
   const keyboard = document.querySelector('.keyboard');
+  let line = '';
+  let oneKey = '';
+  let langRu = '';
+  let langEn = '';
+  let shiftRu = '';
+  let lowerCaseRu = '';
+  let upperCaseRu = '';
+  let shiftEng = '';
+  let lowerCaseEng = '';
+  let upperCaseEng = '';
 
-  function contentKey(arr) {
-    const line = document.createElement('div');
+  for (let i = 0; i < _keys__WEBPACK_IMPORTED_MODULE_0__["default"].length; i++) {
+    line = document.createElement('div');
     line.classList.add('line');
     keyboard.append(line);
-    arr.forEach((element) => {
-      const oneKey = document.createElement('div');
+    for (let j = 0; j < _keys__WEBPACK_IMPORTED_MODULE_0__["default"][i].length; j++) {
+      oneKey = document.createElement('div');
       oneKey.classList.add('key');
-      switch (element) {
-        case 192:
-          oneKey.innerText += '`';
-          break;
-        case 189:
-          oneKey.innerText += '-';
-          break;
-        case 187:
-          oneKey.innerText += '=';
-          break;
-        case 8:
-          oneKey.classList.add('backspace');
-          oneKey.innerText += 'Backspace';
-          break;
-        case 9:
-          oneKey.classList.add('tab');
-          oneKey.innerText += 'Tab';
-          break;
-        case 219:
-          oneKey.innerText += '[';
-          break;
-        case 221:
-          oneKey.innerText += ']';
-          break;
-        case 220:
-          oneKey.classList.add('slash');
-          oneKey.innerText += '\\';
-          break;
-        case 20:
-          oneKey.classList.add('capslock');
-          oneKey.innerText += 'Capslock';
-          break;
-        case 186:
-          oneKey.innerText += ';';
-          break;
-        case 222:
-          oneKey.innerText += "'";
-          break;
-        case 13:
-          oneKey.classList.add('enter');
-          oneKey.innerText += 'Enter';
-          break;
-        case 16:
-          oneKey.classList.add('shift');
-          oneKey.innerText += 'shift';
-          break;
-        case 188:
-          oneKey.innerText += ',';
-          break;
-        case 190:
-          oneKey.innerText += '.';
-          break;
-        case 191:
-          oneKey.innerText += '/';
-          break;
-        case 17:
-          oneKey.classList.add('ctrl');
-          oneKey.innerText += 'ctrl';
-          break;
-        case 91:
-          oneKey.classList.add('win');
-          oneKey.innerText += 'win';
-          break;
-        case 18:
-          oneKey.classList.add('alt');
-          oneKey.innerText += 'alt';
-          break;
-        case 32:
-          oneKey.classList.add('space');
-          oneKey.innerText += 'space';
-          break;
-        case 93:
-          oneKey.classList.add('cont');
-          oneKey.innerText += 'cont';
-          break;
-        case 37:
-          oneKey.innerText += '◄';
-          break;
-        case 40:
-          oneKey.innerText += '▼';
-          break;
-        case 39:
-          oneKey.innerText += '►';
-          break;
-        case 38:
-          oneKey.innerText += '▲';
-          break;
-        default:
-          oneKey.innerText += String.fromCharCode(element).toLowerCase();
+      langRu = document.createElement('div');
+      langEn = document.createElement('div');
+      shiftRu = document.createElement('span');
+      lowerCaseRu = document.createElement('span');
+      upperCaseRu = document.createElement('span');
+      shiftEng = document.createElement('span');
+      lowerCaseEng = document.createElement('span');
+      upperCaseEng = document.createElement('span');
+      langRu.classList.add('ru');
+      langEn.classList.add('eng');
+      oneKey.dataset.keyid = _keys__WEBPACK_IMPORTED_MODULE_0__["default"][i][j].code;
+      if (lang === 'en') {
+        langRu.classList.add('hidden');
+        upperCaseEng.classList.add('hidden');
+        shiftEng.classList.add('hidden');
+        if (_keys__WEBPACK_IMPORTED_MODULE_0__["default"][i][j].class) {
+          oneKey.classList.add(_keys__WEBPACK_IMPORTED_MODULE_0__["default"][i][j].class);
+          lowerCaseEng.innerText = _keys__WEBPACK_IMPORTED_MODULE_0__["default"][i][j].key;
+          shiftEng.innerText = _keys__WEBPACK_IMPORTED_MODULE_0__["default"][i][j].shift;
+          upperCaseEng.innerText = _keys__WEBPACK_IMPORTED_MODULE_0__["default"][i][j].key;
+        } else {
+          lowerCaseEng.innerText = _keys__WEBPACK_IMPORTED_MODULE_0__["default"][i][j].key.en;
+          shiftEng.innerText = _keys__WEBPACK_IMPORTED_MODULE_0__["default"][i][j].shift.en;
+          upperCaseEng.innerText = _keys__WEBPACK_IMPORTED_MODULE_0__["default"][i][j].shift.en;
+        }
       }
-      line.append(oneKey);
-    });
-  }
-  contentKey(oneLine);
-  contentKey(twoLine);
-  contentKey(threeLine);
-  contentKey(fourLine);
-  contentKey(fiveLine);
-}
+      if (lang === 'ru') {
+        langEn.classList.add('hidden');
+        upperCaseRu.classList.add('hidden');
+        shiftRu.classList.add('hidden');
+        if (_keys__WEBPACK_IMPORTED_MODULE_0__["default"][i][j].class) {
+          oneKey.classList.add(_keys__WEBPACK_IMPORTED_MODULE_0__["default"][i][j].class);
+          lowerCaseRu.innerText = _keys__WEBPACK_IMPORTED_MODULE_0__["default"][i][j].key;
+          shiftRu.innerText = _keys__WEBPACK_IMPORTED_MODULE_0__["default"][i][j].shift;
+          upperCaseRu.innerText = _keys__WEBPACK_IMPORTED_MODULE_0__["default"][i][j].key;
+        } else {
+          lowerCaseRu.innerText = _keys__WEBPACK_IMPORTED_MODULE_0__["default"][i][j].key.ru;
+          shiftRu.innerText = _keys__WEBPACK_IMPORTED_MODULE_0__["default"][i][j].shift.ru;
+          upperCaseRu.innerText = _keys__WEBPACK_IMPORTED_MODULE_0__["default"][i][j].shift.ru;
+        }
+      }
+      shiftRu.classList.add('shifton');
+      lowerCaseRu.classList.add('low');
+      upperCaseRu.classList.add('upp');
+      shiftEng.classList.add('shifton');
+      lowerCaseEng.classList.add('low');
+      upperCaseEng.classList.add('upp');
+      langEn.append(shiftEng, lowerCaseEng, upperCaseEng);
+      langRu.append(shiftRu, lowerCaseRu, upperCaseRu);
 
+      oneKey.append(langRu, langEn);
+
+      line.append(oneKey);
+    }
+  }
+}
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createKey);
 
 
@@ -297,14 +1015,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_createBlock__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/createBlock */ "./src/js/modules/createBlock.js");
 /* harmony import */ var _modules_contentText__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/contentText */ "./src/js/modules/contentText.js");
 /* harmony import */ var _modules_createKey__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/createKey */ "./src/js/modules/createKey.js");
+/* harmony import */ var _modules_activeKey__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/activeKey */ "./src/js/modules/activeKey.js");
+
 
 
 
 
 window.addEventListener('DOMContentLoaded', () => {
+  localStorage.lang = 'en';
   (0,_modules_createBlock__WEBPACK_IMPORTED_MODULE_0__["default"])();
   (0,_modules_contentText__WEBPACK_IMPORTED_MODULE_1__["default"])();
   (0,_modules_createKey__WEBPACK_IMPORTED_MODULE_2__["default"])();
+  (0,_modules_activeKey__WEBPACK_IMPORTED_MODULE_3__["default"])();
 });
 
 })();
